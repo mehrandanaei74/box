@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="tailwind.min.js"></script>
+</head>
+<body class="dark:bg-slate-500 flex justify-center items-center min-h-screen">
+    <button onclick="Switch()" class="absolute top-0 left-50 trasform-x-[50%] text-white bg-blue-500 rounded-lg mt-4 px-4 py-2">switch</button>
+    <div class="w-[600px] font-sans bg-white flex flex-col rounded-xl overflow-hidden shadow-xl dark:ring-transparent ring-1 ring-slate-900/5">
+        <div class="w-full bg-white dark:bg-slate-800 flex flex-col">
+            <div class="top w-full mt-6 px-8 flex flex-row justify-between items-center">
+                <p class="text-lg text-black dark:text-white font-semibold">projects</p>
+                <button class=" bg-blue-500 hover:bg-blue-400 transition flex items-center justify-center px-2.5 py-1 rounded-md text-white gap-1.5">
+                    <span class="mb-0.5">+</span>
+                    <p>New</p>
+                </button>
+            </div>
+            <div class="search-box-container w-full px-8 pt-4 pb-6">
+                <div class="search-box w-full h-10 group bg-white dark:bg-slate-700 rounded-md relative">
+                    <input type="text" class="w-full h-full dark:ring-transparent ring-1 ring-gray-200 bg-transparent dark:group-focus-within:bg-slate-800 group-focus-within:bg-white group-focus-within:text-blue-500 focus:ring-2 focus:ring-blue-500 outline-none justify-center pl-10 pr-3 rounded-lg" placeholder="filter projects...">
+                    <svg width="20" height="20" fill="currentColor" class="absolute top-[30%] left-0 text-slate-400 mb-3 ml-3 group-focus-within:text-blue-500" style="transform: traslate(0, -50%);" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                      </svg>
+                </div>
+            </div>    
+        </div>
+        <div class="box-main bg-slate-50 dark:bg-slate-900 pt-6 pb-8 px-8 w-full h-auto grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-[1rem] overflow-hedden">
+            <div class="box1 bg-white dark:bg-slate-700 grid grid-cols-2 lg:grid-cols-1 p-3 dark:ring-transparent ring-1 ring-gray-200 rounded-lg group hover:bg-blue-500 transition">
+                <div class="flex flex-col justify-start items-start lg:justify-center ">
+                     <p class="font-semibold dark:text-white group-hover:text-white transition">API Integration </p>
+                     <p class="text-slate-500 group-hover:text-gray-300 transition">Engineering</p>
+                </div>
+                <div class=" lg:mt-3 flex flex-row justify-end lg:justify-start items-center">
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg" src="https://images.unsplash.com/photo-1531123897727-8f…auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li> 
+                </div>
+            </div>    
+            <div class="box1 bg-white dark:bg-slate-700 grid grid-cols-2 lg:grid-cols-1 p-3 dark:ring-transparent ring-1 ring-gray-200 rounded-lg group hover:bg-blue-500 transition">
+                <div class="flex flex-col justify-start items-start lg:justify-center ">
+                     <p class="font-semibold dark:text-white group-hover:text-white transition">New Benefits Plan</p>
+                     <p class="text-slate-500 group-hover:text-gray-300 transition">Human Resources</p>
+                </div>
+                <div class=" lg:mt-3 flex flex-row justify-end lg:justify-start items-center">
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg" src="https://images.unsplash.com/photo-1531123897727-8f…auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li> 
+                </div>
+            </div> 
+            <div class="box1 bg-white dark:bg-slate-700 grid grid-cols-2 lg:grid-cols-1 p-3 dark:ring-transparent ring-1 ring-gray-200 rounded-lg group hover:bg-blue-500 transition">
+                <div class="flex flex-col justify-start items-start lg:justify-center ">
+                     <p class="font-semibold dark:text-white group-hover:text-white transition">Onboarding Emails</p>
+                     <p class="text-slate-500 group-hover:text-gray-300 transition">Costomer Success</p>
+                </div>
+                <div class=" lg:mt-3 flex flex-row justify-end lg:justify-start items-center">
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg" src="https://images.unsplash.com/photo-1531123897727-8f…auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li>
+                    <img class="w-8 h-8 lg:w-6 lg:h-6 rounded-full ring-2 ring-white shadow-lg ml-[-4px]" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" alt=""></li> 
+                </div>
+            </div> 
+            <div class="box4 w-auto h-auto bg-transeparent border-dashed border-2 border-slate-300 p-3 flex flex-col items-center justify-center rounded-lg font-medium text-sm group hover:border-blue-500 hover:border-solid hover:bg-white hover:text-blue-500 dark:hover:bg-transparent transition">
+                <svg width="30" height="30" fill="currentColor" class="mb-1 text-slate-400 group-hover:text-blue-500"><path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z"></path></svg>
+                <p class="dark:group-hover:text-blue-500 dark:text-slate-400">New project</p>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
+<style>
+    *{
+        box-sizing: border-box;
+        
+        
+    }
+
+</style>
+
+<script>
+    function Switch(){
+        let htmlElement=document.querySelector('html');
+        htmlElement.classList.toggle('dark');
+    }
+</script>
